@@ -1,0 +1,16 @@
+{
+  "name": "metalivre",
+  "version": "1.0.0",
+  "description": "retrieve metadata for books",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xian",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^6.5.0",
+    "node-fetch": "^2.6.0",
+    "prompts": "^2.1.0"
+  }
+}
