@@ -9,6 +9,7 @@
   "author": "xian",
   "license": "MIT",
   "dependencies": {
+    "commander": "^3.0.0",
     "inquirer": "^6.5.0",
     "node-fetch": "^2.6.0",
     "prompts": "^2.1.0"

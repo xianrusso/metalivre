@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-const fetch = require('node-fetch');
-const prompts = require('prompts');
+const fetch = require('node-fetch')
+const prompts = require('prompts')
 
 const url = "https://www.googleapis.com/books/v1/volumes?q="
 const title = "intitle:"
@@ -16,9 +16,10 @@ const questions = [
                             .then(res => res.json())
                             .then(json => {
                                 let item = json.items[0];
-                                console.log(item.volumeInfo.title);
-                                console.log(item.volumeInfo.authors);
-                                console.log(item.volumeInfo.description);
+                                console.log(`Title: ${item.volumeInfo.title}`);
+                                console.log(`Author: ${item.volumeInfo.authors}`);
+                                console.log(`Description: ${item.volumeInfo.description}`);
+                                console.log(`Page Count: ${item.volumeInfo.pageCount}`)
                             })
                             ? true : console.log('BRR'),
     },
